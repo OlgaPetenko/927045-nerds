@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ольга Петенко](https://up.htmlacademy.ru/htmlcss/23/user/927045).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
 ---
 

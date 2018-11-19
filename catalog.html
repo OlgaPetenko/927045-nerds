@@ -23,27 +23,31 @@
   </header>
   <main class="container">
     <h1 class="main-title">Магазин готовых шаблонов</h1>
+    <aside class="cost-and-filters">
+      <div class="cost">
+        <p>Стоимость<p>
+          <!-- Здесь будет маркер с курсором -->
+        </div>
+      <div class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <!-- Здесь будет форма -->
+      </div>
+    </aside>
+    <div class="sorting-and-catalog">
     <section class="sorting">
       <p class="sort-header"> Сортировать:</p>
       <ul class="sorting type">
-        <li class="active-sort-price">по цене</li>
-        <li class="sort-type">по типу</li>
-        <li class="sort-name">по названию</li>
+        <li class="active-sort-price"><a href="price.html">по цене</a></li>
+        <li class="sort-type"><a href="type">по типу</a></li>
+        <li class="sort-name"><a href="name.html"> по названию</a></li>
+        <li class="button-up-sort"><a href="button-up.html">по возрастанию</a></li>
+        <li class="button-down-sort"><a href="button-down.html">по убыванию</a></li>
       </ul>
-      <button class="button-up-sort">Вверх</button>
-      <button class="button-down-sort">Вниз</button>
     </section>
-    <div class="cost">
-      <p>Стоимость<p>
-        <!-- Здесь будет маркер с курсором -->
-      </div>
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
-      </section>
       <div class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
         <ul class="catalog-list">
+            <article class="catalog-item-block">
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
@@ -51,6 +55,8 @@
               </a>
             </p>
           </li>
+        </article>
+          <article class="catalog-item-block">
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
@@ -58,6 +64,8 @@
               </a>
             </p>
           </li>
+        </article>
+          <article class="catalog-item-block">
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
@@ -65,6 +73,8 @@
               </a>
             </p>
           </li>
+        </article>
+          <article class="catalog-item-block">
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
@@ -72,6 +82,8 @@
               </a>
             </p>
           </li>
+        </article>
+          <article class="catalog-item-block">
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
@@ -79,6 +91,8 @@
               </a>
             </p>
           </li>
+        </article>
+              <article class="catalog-item-block">
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
@@ -86,6 +100,7 @@
               </a>
             </p>
           </li>
+        </article>
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current">1</li>
@@ -94,15 +109,16 @@
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </div>
+    </div>
     </main>
     <footer class="main-footer">
       <div class="footer-contacts">
-        <p class="contacts">
+        <address class="contacts">
           nerds design studio<br>
           1911186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8<br>
           Телефон: +7 (812) 275-75-7<br>
           <a class="connection-button" href="connection.html">Напишите нам</a>
-        </p>
+        </address>
       </div>
       <img src="img/contacts.jpg" alt="Контакты" width="120" height="120">
       <div class="footer-social">

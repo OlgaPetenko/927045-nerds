@@ -26,8 +26,54 @@
     <aside class="filters">
       <p>Стоимость</p>
       <!-- Здесь будет маркер с курсором -->
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+                         </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="" id="filter-fix" >
+                <label for="filter-fix">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="filter-advantage">
+                <label for="filter-advantage">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
+      </section>
     </aside>
     <div class="sorting-and-catalog">
       <section class="sorting">
@@ -110,15 +156,19 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="footer-contacts">
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">
+        Как до нас добраться
+      </h2>
       <address class="contacts">
         nerds design studio<br>
         1911186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8<br>
         Телефон: +7 (812) 275-75-7<br>
         <a class="connection-button" href="connection.html">Напишите нам</a>
       </address>
-    </div>
-    <img src="img/contacts.jpg" alt="Контакты" width="120" height="120">
+      <img src="img/2.jpg" alt="Офис компании по адресу Санкт-Петербург, ул.Большая Конюшенная, д. 19/8" width="1440" height="416">
+      <img src="img/map-marker-png.png" alt="Маркер расположения студии нердс" width="231" height="190">
+    </section>
     <div class="footer-social">
       <ul>
         <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -129,5 +179,84 @@
       <p class="discount">Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
-</body>
-</html>
+  <section class="modal modal-connection">
+    <h2>Напишите нам</h2>
+    <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="appointment-item">
+        <label for="appointment-name">Ваше имя:</label>
+        <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+      </p>
+      <p class="appointment-item">
+        <label for="appointment-e-mail">Ваш e-mail:</label>
+        <input id="appointment-e-mail" type="text" name="email" value="" placeholder="email@exampl.com">
+      </p>
+      <p>Текст письма:</p>
+      <textarea name="text" id="text-field" rows="5">В свободной форме</textarea><br>
+      <button class="button" type="submit">
+        Отправить
+      </button>
+    </form>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
+  </section>
+  <section class="catalof-info">
+    <ul class="catalog-info-list">
+      <li class="catalog-info-item">
+        <article class="catalog-info-item-block">
+          <h2>SEDONA</h2>
+          <p> Информационный сайт для туристов</p>
+          <button class="price" type="button">
+            9900 руб.
+          </button>
+        </article>
+      </li>
+      <li class="catalog-info-item">
+        <article class="catalog--info-item-block">
+          <h2>PINK APP</h2>
+          <p>Продуктовый лендинг приложения для iOS и Android </p>
+          <button class="price" type="button">
+            9900 руб.
+          </button>
+        </article>
+      </li>
+      <li class="catalog-info-item">
+        <article class="catalog-info-item-block">
+          <h2>Barbershop</h2>
+          <p>Сайт салона красоты. Для мужчин, да. </p>
+          <button class="price" type="button">
+            9900 руб.
+          </button>
+        </article>
+      </li>
+      <li class="catalog-info-item">
+        <article class="catalog-info-item-block">
+          <h2>MISHKA</h2>
+          <p>Интернет-магазин вязаных игрушек</p>
+          <button class="price" type="button">
+            9900 руб.
+          </button>
+        </article>
+      </li>
+      <li class="cataloginfo--item">
+        <article class="catalog-info-item-block">
+          <h2>A PLUS</h2>
+          <p>Лендинг курсов повышения квалификации</p>
+          <button class="price" type="button">
+            9900 руб.
+          </button>
+        </article>
+      </li>
+      <li class="catalog-info-item">
+        <article class="catalog-info-item-block">
+          <h2>КВАСТ</h2>
+          <p>Промо-сайт производителя крафтового кваса</p>
+          <button class="price" type="button">
+            9900 руб.
+          </button>
+        </article>
+      </li>
+    </ul>
+  </section>
+  </body>
+  </html>

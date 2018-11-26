@@ -35,7 +35,7 @@
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
-                         </li>
+              </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="" id="filter-fix" >
                 <label for="filter-fix">Фиксированная</label>
@@ -98,6 +98,13 @@
                   <img src="img/img-sedona-jpg.png" width="360" height="576" alt="сайт Sedona">
                 </a>
               </p>
+              <div class="hover-info">
+                <h2 class="name-product">Sedona</h2>
+                <p class="info-product"> Информационный сайт для туристов</p>
+                <button class="price-product" type="button">
+                  9900 руб.
+                </button>
+              </div>
             </article>
           </li>
           <li class="catalog-item">
@@ -107,6 +114,13 @@
                   <img src="img/img-pink-jpg.png" width="360" height="576" alt="сайт Pink">
                 </a>
               </p>
+              <div class="hover-info">
+                <h2 class="name-product">Pink App</h2>
+                <p class="info-product"> Продуктовый лендинг приложения для iOS и Android </p>
+                <button class="price-product" type="button">
+                  9900 руб.
+                </button>
+              </div>
             </article>
           </li>
           <li class="catalog-item">
@@ -116,6 +130,13 @@
                   <img src="img/img-barbershop-jpg.png" width="360" height="576" alt="сайт Barbershop Borodinski">
                 </a>
               </p>
+              <div class="hover-info">
+                <h2 class="name-product">Barbershop</h2>
+                <p class="info-product"> Сайт салона красоты. Для мужчин, да. </p>
+                <button class="price-product" type="button">
+                  9900 руб.
+                </button>
+              </div>
             </article>
           </li>
           <li class="catalog-item">
@@ -125,15 +146,29 @@
                   <img src="img/img-mishka-jpg.png" width="360" height="576" alt="сайт Mishka">
                 </a>
               </p>
+              <div class="hover-info">
+                <h2 class="name-product">Mishka</h2>
+                <p class="info-product"> Интернет-магазин вязаных игрушек </p>
+                <button class="price-product" type="button">
+                  9900 руб.
+                </button>
+              </div>
             </article>
           </li>
           <li class="catalog-item">
             <article class="catalog-item-block">
               <p class="catalog-item-image">
                 <a href="catalog-item.html">
-                  <img src="img/img-aplus-jpg.png" width="360" height="576" alt="сайт A+">
+                  <img src="img/img-aplus-jpg.png" width="360" height="576" alt="сайт A plus">
                 </a>
               </p>
+              <div class="hover-info">
+                <h2 class="name-product">A plus</h2>
+                <p class="info-product"> Лендинг курсов повышения квалификации </p>
+                <button class="price-product" type="button">
+                  9900 руб.
+                </button>
+              </div>
             </article>
           </li>
           <li class="catalog-item">
@@ -143,6 +178,13 @@
                   <img src="img/img-kvast-jpg.png" width="360" height="576" alt="сайт кваст">
                 </a>
               </p>
+              <div class="hover-info">
+                <h2 class="name-product">Кваст</h2>
+                <p class="info-product"> Промо-сайт производителя крафтового кваса </p>
+                <button class="price-product" type="button">
+                  9900 руб.
+                </button>
+              </div>
             </article>
           </li>
         </ul>
@@ -156,7 +198,7 @@
     </div>
   </main>
   <footer class="main-footer">
-    <section class="modal modal-map">
+    <section class="address-map">
       <h2 class="visually-hidden">
         Как до нас добраться
       </h2>
@@ -190,8 +232,10 @@
         <label for="appointment-e-mail">Ваш e-mail:</label>
         <input id="appointment-e-mail" type="text" name="email" value="" placeholder="email@exampl.com">
       </p>
-      <p>Текст письма:</p>
-      <textarea name="text" id="text-field" rows="5">В свободной форме</textarea><br>
+      <p class="appointment-item">
+        <label for="appointment-text-field">Текст письма:</label>
+        <textarea name="text" id="appointment-text-field" rows="5">В свободной форме</textarea>
+      </p>
       <button class="button" type="submit">
         Отправить
       </button>
@@ -200,63 +244,5 @@
       Закрыть
     </button>
   </section>
-  <section class="catalof-info">
-    <ul class="catalog-info-list">
-      <li class="catalog-info-item">
-        <article class="catalog-info-item-block">
-          <h2>SEDONA</h2>
-          <p> Информационный сайт для туристов</p>
-          <button class="price" type="button">
-            9900 руб.
-          </button>
-        </article>
-      </li>
-      <li class="catalog-info-item">
-        <article class="catalog--info-item-block">
-          <h2>PINK APP</h2>
-          <p>Продуктовый лендинг приложения для iOS и Android </p>
-          <button class="price" type="button">
-            9900 руб.
-          </button>
-        </article>
-      </li>
-      <li class="catalog-info-item">
-        <article class="catalog-info-item-block">
-          <h2>Barbershop</h2>
-          <p>Сайт салона красоты. Для мужчин, да. </p>
-          <button class="price" type="button">
-            9900 руб.
-          </button>
-        </article>
-      </li>
-      <li class="catalog-info-item">
-        <article class="catalog-info-item-block">
-          <h2>MISHKA</h2>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <button class="price" type="button">
-            9900 руб.
-          </button>
-        </article>
-      </li>
-      <li class="cataloginfo--item">
-        <article class="catalog-info-item-block">
-          <h2>A PLUS</h2>
-          <p>Лендинг курсов повышения квалификации</p>
-          <button class="price" type="button">
-            9900 руб.
-          </button>
-        </article>
-      </li>
-      <li class="catalog-info-item">
-        <article class="catalog-info-item-block">
-          <h2>КВАСТ</h2>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <button class="price" type="button">
-            9900 руб.
-          </button>
-        </article>
-      </li>
-    </ul>
-  </section>
-  </body>
-  </html>
+</body>
+</html>

@@ -13,7 +13,7 @@
       <ul class="site-navigation">
         <li><a>Студия</a></li>
         <li><a href="clientage.html">Клиенты</a></li>
-        <li><a href="nerds-catalog.html">Магазин</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
@@ -113,7 +113,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="modal modal-map">
+    <section class="address-map">
       <h2 class="visually-hidden">
         Как до нас добраться
       </h2>
@@ -147,8 +147,10 @@
         <label for="appointment-e-mail">Ваш e-mail:</label>
         <input id="appointment-e-mail" type="text" name="email" value="" placeholder="email@exampl.com">
       </p>
-      <p>Текст письма:</p>
-      <textarea name="text" id="text-field" rows="5">В свободной форме</textarea><br>
+      <p class="appointment-item">
+        <label for="appointment-text-field">Текст письма:</label>
+        <textarea name="text" id="appointment-text-field" rows="5">В свободной форме</textarea>
+      </p>
       <button class="button" type="submit">
         Отправить
       </button>

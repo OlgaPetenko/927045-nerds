@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto","Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #283136;
-  text-transform: ;
+  text-transform: none;
 
   background-color: #ffffff;
 }
@@ -24,13 +24,16 @@ a {
 
   background-color: #e1e1e1;
   }
+
 .main-header-logo {
   color: #000000;
 }
+
 .main-header-logo :focus,
 .main-header-logo :hover {
   opacity: 0.8;
 }
+
 .main-header-logo :active {
   opacity: 0.3;
 }
@@ -39,23 +42,25 @@ a {
 .user-navigation {
   list-style: none;
 }
+
 .site-navigation a,
 .user-navigation a {
   color: #000000;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation :hover,
-.user-navigation :focus
-{
+.user-navigation :focus {
   color: #fb565a;
 }
+
 .site-navigation a:active,
-.user-navigation :active
-{
+.user-navigation :active {
   color: #000000;
   opacity: 0.3;
 }
+
 .active-page {
   text-decoration: underline;
   text-decoration-color: #fb565a;
@@ -90,14 +95,17 @@ a {
   background-color: #fb565a;
   border: none;
   }
+
 .price-button-one :hover,
 .price-button-one :focus {
   background-color: #e74246;
 }
+
 .price-button-one :active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
   }
+
 .price-button-two {
   font-size: 17.5;
   line-height: 17.5;
@@ -110,14 +118,17 @@ a {
   background-color: #00ca74;
   border: none;
   }
+
 .price-button-two :hover,
 .price-button-two :focus {
   background-color: #00bc6c;
 }
+
 .price-button-two :active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
 }
+
 .price-button-three {
   font-size: 17.5;
   line-height: 17.5;
@@ -130,10 +141,12 @@ a {
   background-color: #efc84a;
   border: none;
   }
+
 .price-button-three:hover,
 .price-button-three {
-  background-color: ##eab534;
+  background-color: #eab534;
   }
+
 .price-button-three:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
@@ -143,27 +156,31 @@ a {
   font-size: 45.5px;
   line-height: 45.5px;
   }
-.studio-principle-left-text  {
+
+.studio-principle-left-text {
   font-size: 16px;
   line-height: 24px;
   }
 
-.services{
+.services {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   }
+
 .tipe-of-services {
   font-size: 16px;
   line-height: 24px;
   list-style: none;
   }
+
 .studio-info-right-text {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   }
+
 .studio-info-right-persent {
   font-size: 45px;
   line-height: 10px;
@@ -172,26 +189,31 @@ a {
   display: flex;
   list-style: none;
   }
+
 .studio-info-right-text-persent {
   font-size: 16px;
   line-height: 18px;
 
   list-style: none;
   }
+
 .logo-site-list {
   list-style: none;
   }
-.logo-style {
+
+.logo-site-list a {
   opacity: 0.2;
   }
 
-.logo-style :hover,
-.logo-style :focus {
+.logo-site-list a :hover,
+.logo-site-list a :focus {
   opacity: 1;
 }
-.logo-style :active {
+
+.logo-site-list a :active {
   opacity: 0.1;
 }
+
 .container h1 {
   font-size: 54px;
   line-height: 54px;
@@ -206,10 +228,12 @@ a {
 font-size: 17.5px;
 line-height: 31.5px;
 }
+
 .filter ul {
   list-style: none;
   line-height: 20px;
 }
+
 .filter-input:hover + label,
 .filter-input:focus + label {
   color: #283136;
@@ -231,6 +255,7 @@ line-height: 31.5px;
   background-color: #eeeeee;
   border: none;
   }
+
 .catalog-item-block a {
   color: #000000;
 }
@@ -241,12 +266,14 @@ line-height: 31.5px;
   text-align: center;
   background-color: #eeeeee;
 }
+
 .name-product{
   font-size: 17.5px;
   line-height: 31.5px;
   text-align: center;
   text-transform: uppercase;
   }
+
 .info-product{
   font-size: 16px;
   line-height: 18px;
@@ -263,25 +290,31 @@ line-height: 31.5px;
   vertical-align: middle;
   text-transform: uppercase;
 }
+
 .price-product:hover,
 .price-product:focus {
   background-color: #e74246;
 }
+
 .price-product:active {
   background-color: #d7373b;
 }
+
 .pagination-list {
   list-style: none;
 }
+
 .pagination-item a {
   color: #000000;
   background-color: #eeeeee;
 }
+
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-item a:active {
   background-color: #ffffff;
 }
+
 .main-footer {
   color: #000000;
 
@@ -289,6 +322,7 @@ line-height: 31.5px;
   background-position: 0 0;
   background-repeat: repeat;
   }
+
 .address-map {
   color: #000000;
 
@@ -296,6 +330,7 @@ line-height: 31.5px;
   background-position: 0 0;
   background-repeat: repeat;
   }
+
 .contacts {
   color: #000000;
   width: 319px;
@@ -303,25 +338,30 @@ line-height: 31.5px;
 
   background-color: #ffffff;
   }
+
 .contacts  h2 {
   font-size: 17.5px;
   line-height: 31.5px;
   text-align: left;
   text-transform: uppercase;
   }
+
 .contacts a {
   color: #000000;
 }
+
 .contacts  address {
   font-size: 16px;
   line-height: 18px;
   text-align: left;
   font-style: normal;
   }
+
 .footer-contacts a {
   color: #ffffff;
   text-decoration: underline;
   }
+
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   text-decoration: none;
@@ -337,10 +377,12 @@ line-height: 31.5px;
   vertical-align: middle;
   text-transform: uppercase;
 }
+
 .contact a:hover,
 .contact a:focus {
   background-color: #e74246;
 }
+
 .contact a:active {
   background-color: #d7373b;
 }
@@ -356,10 +398,12 @@ line-height: 31.5px;
 .social-button {
   color: #000000;
 }
+
 .footer-social b {
   font-size: 35px;
   line-height: 35px;
 }
+
 .footer-social p {
   font-size: 16px;
   line-height: 22px;
@@ -370,10 +414,12 @@ line-height: 31.5px;
   background-color: #ffffff;
   font-weight: bold;
 }
+
 .modal h2 {
   font-size: 45px;
   line-height: 45px;
 }
+
 .appointment-item textarea,
 .appointment-item-name input[type="text"],
 .appointment-item input[type="text"]{
@@ -386,14 +432,16 @@ line-height: 31.5px;
   border-color: #d7dcde;
   border: 2px solid #d7dcde;
 }
+
 .appointment-item textarea[type="text"],
 .appointment-item input[type="text"]:focus {
   color: #000000;
 
   border-color: #000000;
   }
+
 .appointment-item textarea[type="text"],
-.appointment-item input[type="text"]:hover{
+.appointment-item input[type="text"]:hover {
   color: #b4b9bb;
   border-color: #b4b9bb;
   }

@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body>
@@ -44,7 +47,7 @@
           </p>
           <p class="service-item-price">
             <b>Мир никогда не будет прежним после того как увидит ваш сайт</b>
-            <button class="price-button" type="button">Заказать</button>
+            <a class="price-button-one" href="#">Заказать</a>
           </p>
         </li>
         <li class="feature-item">
@@ -54,7 +57,7 @@
           </p>
           <p class="feature-item-price">
             <b>Покорите топ-10 приложений в AppStore и Google Play</b>
-            <button class="price-button" type="button">Заказать</button>
+            <a class="price-button-two" href="#">Заказать</a>
           </p>
         </li>
         <li class="feature-item">
@@ -64,7 +67,7 @@
           </p>
           <p class="feature-item-price">
             <b>Вы даже не представляете насколько вы изумительны</b>
-            <button class="price-button" type="button">Заказать</button>
+            <a class="price-button-three" href="#">Заказать</a>
           </p>
         </li>
       </ul>
@@ -98,31 +101,33 @@
     <section class="site-list">
       <ul class="logo-site-list">
         <li> <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-1-png.jpg" alt="Логотип Html Academy" width="199" height="68"></a>
+          <img src="img/logo-1-copy-png.jpg" alt="Логотип Html Academy" width="199" height="68"></a>
         </li>
         <li>
-          <a> <img src="img/logo-2-png.jpg" alt="Логотип барбершопа Бородинский" width="209" height="90"></a>
+          <a> <img src="img/logo-2-copy-png.jpg" alt="Логотип барбершопа Бородинский" width="209" height="90"></a>
         </li>
         <li>
-          <a><img src="img/logo-3-png.jpg" alt="Логотип сайта Pink" width="185" height="52"></a>
+          <a><img src="img/logo-3-copy-png.jpg" alt="Логотип сайта Pink" width="185" height="52"></a>
         </li>
         <li>
-          <a><img src="img/logo-4-png.jpg" alt="Логотип магазина Мишка" width="173" height="84"></a>
+          <a><img src="img/logo-4-copy-png.jpg" alt="Логотип магазина Мишка" width="173" height="84"></a>
         </li>
       </ul>
     </section>
   </main>
   <footer class="main-footer">
     <section class="address-map">
+      <div class="contacts">
       <h2 class="visually-hidden">
         Как до нас добраться
       </h2>
-      <address class="contacts">
-        nerds design studio<br>
+      <h2>nerds design studio</h2><br>
+      <address class="contact">
         1911186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8<br>
         Телефон: +7 (812) 275-75-7<br>
         <a class="connection-button" href="connection.html">Напишите нам</a>
       </address>
+    </div>
       <img src="img/2.jpg" alt="Офис компании по адресу Санкт-Петербург, ул.Большая Конюшенная, д. 19/8" width="1440" height="416">
       <img src="img/map-marker-png.png" alt="Маркер расположения студии нердс" width="231" height="190">
     </section>
@@ -149,7 +154,7 @@
       </p>
       <p class="appointment-item">
         <label for="appointment-text-field">Текст письма:</label>
-        <textarea name="text" id="appointment-text-field" rows="5">В свободной форме</textarea>
+        <textarea name="text" id="appointment-text-field" type="text" rows="5">В свободной форме</textarea>
       </p>
       <button class="button" type="submit">
         Отправить

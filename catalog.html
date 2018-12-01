@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body>
@@ -13,7 +16,7 @@
       <ul class="site-navigation">
         <li><a href="index.html">Студия</a></li>
         <li><a href="clientage.html">Клиенты</a></li>
-        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+        <li class="active-page"><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
@@ -71,7 +74,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+          <a class="filter-button" href "#">Показать</a>
         </form>
       </section>
     </aside>
@@ -187,15 +190,17 @@
   </main>
   <footer class="main-footer">
     <section class="address-map">
+      <div class="contacts">
       <h2 class="visually-hidden">
         Как до нас добраться
       </h2>
-      <address class="contacts">
-        nerds design studio<br>
+      <h2>nerds design studio</h2><br>
+      <address class="contact">
         1911186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8<br>
         Телефон: +7 (812) 275-75-7<br>
         <a class="connection-button" href="connection.html">Напишите нам</a>
       </address>
+    </div>
       <img src="img/2.jpg" alt="Офис компании по адресу Санкт-Петербург, ул.Большая Конюшенная, д. 19/8" width="1440" height="416">
       <img src="img/map-marker-png.png" alt="Маркер расположения студии нердс" width="231" height="190">
     </section>
@@ -222,7 +227,7 @@
       </p>
       <p class="appointment-item">
         <label for="appointment-text-field">Текст письма:</label>
-        <textarea name="text" id="appointment-text-field" rows="5">В свободной форме</textarea>
+        <textarea name="text" id="appointment-text-field" type="text" rows="5">В свободной форме</textarea>
       </p>
       <button class="button" type="submit">
         Отправить

@@ -99,8 +99,8 @@ a {
   border: none;
   }
 
-.price-button-red :hover,
-.price-button-red :focus {
+.price-button-red:hover,
+.price-button-red:focus {
   background-color: #e74246;
 }
 

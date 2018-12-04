@@ -85,14 +85,16 @@ a {
   font-style: normal;
 }
 
-.price-button-red {
+.price-button {
   font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
+}
 
+.price-button-red {
   background-color: #fb565a;
   border: none;
   }
@@ -102,54 +104,38 @@ a {
   background-color: #e74246;
 }
 
-.price-button-red :active {
+.price-button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+.price-button-red:active {
   background-color: #d7373b;
   }
 
 .price-button-green {
-  font-size: 16px;
-  line-height: 18px;
-
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
   background-color: #00ca74;
   border: none;
   }
 
-.price-button-green :hover,
-.price-button-green :focus {
+.price-button-green:hover,
+.price-button-green:focus {
   background-color: #00bc6c;
 }
 
-.price-button-green :active {
-  color: rgba(255, 255, 255, 0.3);
+.price-button-green:active {
   background-color: #00aa62;
 }
 
 .price-button-yellow {
-  font-size: 16px;
-  line-height: 18px;
-
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
   background-color: #efc84a;
   border: none;
   }
 
-.price-button-yellow :hover,
+.price-button-yellow:hover,
 .price-button-yellow {
   background-color: #eab534;
   }
 
-.price-button-yellow :active {
-  color: rgba(255, 255, 255, 0.3);
+.price-button-yellow:active {
   background-color: #e5a722;
   }
 

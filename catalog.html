@@ -7,17 +7,17 @@
    <link rel="stylesheet" href="style.css">
   <title>HTML Academy: Нёрдс</title>
 </head>
-<body>
+<body class="inner-page">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии nerd's">
       </a>
       <ul class="site-navigation">
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="clientage.html">Клиенты</a></li>
-        <li class="active-page"><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li class="navigation"><a href="index.html">Студия</a></li>
+        <li class="navigation"><a href="clientage.html">Клиенты</a></li>
+        <li class="navigation active-page"><a href="catalog.html">Магазин</a></li>
+        <li class="navigation"><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
         <li class="basket">Корзина</li>
@@ -26,6 +26,7 @@
   </header>
   <main class="container">
     <h1 class="main-title">Магазин готовых шаблонов</h1>
+    <div class="catalog-colums">
     <aside class="filters">
       <p>Стоимость</p>
       <!-- Здесь будет маркер с курсором -->
@@ -178,6 +179,7 @@
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </div>
+      </div>
     </div>
   </main>
   <footer class="main-footer">
@@ -192,16 +194,22 @@
       </address>
     </div>
       <img src="img/2.jpg" alt="Офис компании по адресу Санкт-Петербург, ул.Большая Конюшенная, д. 19/8" width="1440" height="416">
+    <div class="marker">
       <img src="img/map-marker-png.png" alt="Маркер расположения студии нердс" width="231" height="190">
+    </div>
     </section>
     <div class="footer-social">
+      <div class="footer-social-left">
       <ul>
         <li><a class="social-button" href="#">Вконтакте</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
+    </div>
+  <div class="footer-social-right">
       <b>Давайте дружить,это выгодно!</b>
       <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+    </div>
     </div>
   </footer>
   <section class="modal modal-connection">

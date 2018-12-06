@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body>
@@ -14,10 +14,10 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии nerd's">
       </a>
       <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li class="navigation"><a href="#">Студия</a></li>
+        <li class="navigation"><a href="#">Клиенты</a></li>
+        <li class="navigation"><a href="catalog.html">Магазин</a></li>
+        <li class="navigation"><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
         <li class="basket">Корзина</li>
@@ -98,22 +98,22 @@
         </ul>
       </div>
     </section>
-    <section class="site-list">
+    <div class="site-list">
       <ul class="logo-site-list">
-        <li> <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <li class="logo-academy"> <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-1-png-copy.png" alt="Логотип Html Academy" width="199" height="68"></a>
         </li>
-        <li>
+        <li class="logo-barbershop">
           <a> <img src="img/logo-2-png-copy.png" alt="Логотип барбершопа Бородинский" width="209" height="90"></a>
         </li>
-        <li>
+        <li class="logo-pink">
           <a><img src="img/logo-3-png-copy.png" alt="Логотип сайта Pink" width="185" height="52"></a>
         </li>
-        <li>
+        <li clas="logo-mishka">
           <a><img src="img/logo-4-png-copy.png" alt="Логотип магазина Мишка" width="173" height="84"></a>
         </li>
       </ul>
-    </section>
+    </div>
   </main>
   <footer class="main-footer">
     <section class="address-map">
@@ -127,16 +127,22 @@
       </address>
     </div>
       <img src="img/2.jpg" alt="Офис компании по адресу Санкт-Петербург, ул.Большая Конюшенная, д. 19/8" width="1440" height="416">
+      <div class="marker">
       <img src="img/map-marker-png.png" alt="Маркер расположения студии нердс" width="231" height="190">
+    </div>
     </section>
     <div class="footer-social">
+      <div class="footer-social-left">
       <ul>
         <li><a class="social-button" href="#">Вконтакте</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
+    </div>
+    <div class="footer-social-right">
       <b>Давайте дружить,это выгодно!</b>
       <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+    </div>
     </div>
   </footer>
   <section class="modal modal-connection">

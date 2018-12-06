@@ -29,12 +29,12 @@ a {
   color: #000000;
 }
 
-.main-header-logo :focus,
-.main-header-logo :hover {
+.main-header-logo:focus,
+.main-header-logo:hover {
   opacity: 0.8;
 }
 
-.main-header-logo :active {
+.main-header-logo:active {
   opacity: 0.3;
 }
 
@@ -59,6 +59,11 @@ a {
 .user-navigation :active {
   color: #000000;
   opacity: 0.3;
+}
+
+.user-navigation .login-link {
+  padding-left: 40px;
+  position: relative;
 }
 
 .active-page {
@@ -192,12 +197,12 @@ a {
   opacity: 0.2;
   }
 
-.logo-site-list a :hover,
-.logo-site-list a :focus {
+.logo-site-list a:hover,
+.logo-site-list a:focus {
   opacity: 1;
 }
 
-.logo-site-list a :active {
+.logo-site-list a:active {
   opacity: 0.1;
 }
 
@@ -444,3 +449,226 @@ line-height: 24px;
   vertical-align: middle;
  text-transform: uppercase;
   }
+
+  /* ----- Сеточные стили ----- */
+
+
+ html,
+ body {
+  min-width: 1200px;
+  min-height: 1750px;
+  }
+
+ .container {
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 10px;
+  }
+
+ .main-header {
+   margin-bottom: 18px;
+  }
+
+.inner-page .main-header {
+  margin-bottom: 82px;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  }
+
+.main-header-logo {
+  order: 0;
+
+  width: 160px;
+  height: 65px;
+  padding: 49px 140px;
+    /* Временно для сетки */
+  display: block;
+  }
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+.navigation {
+  width: 83px;
+  margin-right: 30px;
+  margin-bottom: 37px;
+  }
+
+.navigation:nth-child(4n) {
+  margin-right: 0;
+}
+
+.user-navigation {
+  margin-left: auto;
+  width: 180px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  }
+
+ .features {
+   margin-bottom: 124px;
+  }
+
+.type-feature {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feature-item {
+  width: 300px;
+}
+
+.studio-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 76px;
+}
+
+.studio-info-left {
+  width: 800px;
+}
+
+.studio-info-right {
+  width: 360px;
+}
+
+.site-list {
+  margin-bottom: 80px;
+}
+
+.logo-site-list {
+  width: 1160px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+
+  list-style: none;
+}
+
+.logo-academy {
+width:  199px;
+height: 68px;
+}
+
+.logo-barbershop {
+  width: 209px;
+  height: 90px;
+}
+
+.logo-pink {
+  width: 185px;
+  height: 52px;
+}
+
+.logo-mishka {
+  width: 173px;
+  height: 85px;
+}
+
+.catalog-colums {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 260px;
+}
+
+.catalog {
+  width: 760px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 34px;
+  margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.inner-page .main-footer {
+  margin-top: 60px;
+}
+
+.main-footer {
+   margin-top: 80px;
+   padding: 0px 0;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.contacts {
+  margin: 0;
+  width: 320px;
+  position: absolute;
+  top: 54px;
+  left: 20px;
+}
+
+.marker {
+  width: 231px;
+  height: 190px;
+  position: absolute;
+  top: 90px;
+  left: 700px;
+}
+
+.address-map {
+  background-image: url("img/2.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 1200px auto;
+  position: relative;
+  }
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social-left{
+  width: 300px;
+}
+
+.footer-social-right{
+  width: 900px;
+}

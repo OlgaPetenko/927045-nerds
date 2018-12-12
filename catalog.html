@@ -8,26 +8,29 @@
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body class="inner-page">
-  <header class="main-header">
+  <header class="inner-header">
+    <div class="container">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии nerd's">
       </a>
-      <div class="main-navigation-container">
         <ul class="site-navigation">
           <li class="navigation"><a href="index.html">Студия</a></li>
           <li class="navigation"><a href="#">Клиенты</a></li>
           <li class="navigation active-page"><a href="catalog.html">Магазин</a></li>
           <li class="navigation"><a href="contacts.html">Контакты</a></li>
         </ul>
-      </div>
       <ul class="user-navigation">
         <li ><a class="basket" href="#">Корзина</a></li>
       </ul>
     </nav>
+  </div>
   </header>
-  <main class="container">
+  <main>
+    <div class="title">
     <h1 class="main-title">Магазин готовых шаблонов</h1>
+  </div>
+  <div class="container">
     <div class="catalog-colums">
       <aside class="filters">
         <section class="filters">
@@ -98,7 +101,7 @@
       <div class="sorting-and-catalog">
         <section class="sorting">
           <p class="sort-header"> Сортировать:</p>
-          <ul class="sorting type">
+          <ul class="sorting-type">
             <li class="active-sort-price"><a href="price.html">по цене</a></li>
             <li class="sort-type"><a href="type">по типу</a></li>
             <li class="sort-name"><a href="name.html">по названию</a></li>
@@ -121,7 +124,7 @@
                   <p class="info-product"> Информационный сайт для туристов</p>
                   <button class="price-product" type="button">
                     9900 руб.
-                  </button>
+                 </button>
                 </div>
               </article>
             </li>
@@ -197,6 +200,7 @@
         </div>
       </div>
     </div>
+  </div>
   </main>
   <footer class="main-footer">
     <section class="address-map">
@@ -215,6 +219,7 @@
       </div>
     </section>
     <div class="footer-social">
+      <div class="container">
       <div class="footer-social-left">
         <ul>
           <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span>
@@ -239,6 +244,7 @@
           <p class="discount">Скидка 10% для друзей из социальных сетей</p>
         </div>
       </div>
+    </div>
     </footer>
     <section class="modal modal-connection">
       <h2>Напишите нам</h2>

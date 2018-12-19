@@ -142,6 +142,7 @@
   </main>
   <footer class="main-footer">
     <section class="address-map">
+      <div class=container>
       <div class="contacts">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <h3>nerds design studio</h3>
@@ -150,11 +151,12 @@
           <p class="phone">тел. : +7 (812) 275-75-75</p>
         </address>
         <a class="connection-button" href="#">Напишите нам</a>
-      </div>
+    </div>
       <img src="img/2.jpg" alt="Офис компании по адресу Санкт-Петербург, ул.Большая Конюшенная, д. 19/8" width="1440" height="416">
       <div class="marker">
         <img src="img/map-marker-png.png" alt="Маркер расположения студии нердс" width="231" height="190">
       </div>
+    </div>
     </section>
     <div class="footer-social">
       <div class="container">
@@ -197,11 +199,13 @@
         </p>
         <p class="appointment-item">
           <label for="appointment-text-field">Текст письма:</label>
-          <textarea name="text" id="appointment-text-field" type="text" rows="5">В свободной форме</textarea>
+          <textarea name="text" id="appointment-text-field" type="text" rows="1">В свободной форме</textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+</button>
     </section>
   </body>
   </html>

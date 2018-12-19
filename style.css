@@ -18,7 +18,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -427,7 +426,7 @@ position: relative;
   }
 
 .price-button-yellow:hover,
-.price-button-yellow {
+.price-button-yellow:focus {
   background-color: #eab534;
   }
 
@@ -557,10 +556,12 @@ margin-left: 100px;
 .logo-site-list a:hover,
 .logo-site-list a:focus {
   opacity: 1;
+  cursor: pointer;
 }
 
 .logo-site-list a:active {
   opacity: 0.1;
+  cursor: pointer;
 }
 
 .main-title {
@@ -745,6 +746,10 @@ opacity: 1;
   opacity: 0.3;
 }
 
+.filter-input-checkbox:checked + label::before{
+  display: none;
+}
+
 .filter-input-checkbox:checked + label::after {
   content: "";
 
@@ -765,7 +770,7 @@ opacity: 1;
 
   position: absolute;
   left: -35px;
-    top: -2px;
+  top: -2px;
 
   width: 25px;
   height: 25px;
@@ -787,12 +792,15 @@ opacity: 1;
   opacity: 0.3;
 }
 
+.filter-input-radio:checked + label::before {
+  display: none;
+}
 .filter-input-radio:checked + label::after {
   content: "";
 
   position: absolute;
   top: -2px;
-  left: -34px;
+  left: -35px;
 
   width: 25px;
   height: 25px;
@@ -897,13 +905,22 @@ opacity: 1;
     list-style: none;
   }
 
-.up-down:hover,
-.up-down:focus {
-  opacity: 0.6
+.up:hover,
+.up:focus {
+  opacity: 0.6;
 }
 
-.up-down:active {
-  opacity: 1
+.up:active {
+  opacity: 1;
+}
+
+.down:hover,
+.down:focus {
+  opacity: 0.6;
+}
+
+.down:active {
+  opacity: 1;
 }
 
 .sort-down {
@@ -1109,10 +1126,22 @@ opacity: 1;
   line-height: 45px;
 }
 
-.appointment-item textarea,
-.appointment-item-name input[type="text"],
+.appointment-item textarea{
+display: block;
+color: #444444;
+opacity: 0.5;
+font-size: 16px;
+line-height: 18px;
+outline: none;
+
+background-color: #ffffff;
+border-color: #d7dcde;
+border: 2px solid #d7dcde;
+}
+
 .appointment-item input[type="text"]{
-  color: #000000;
+  color: #444444;
+  opacity: 0.5;
   font-size: 16px;
   line-height: 18px;
   outline: none;
@@ -1122,19 +1151,25 @@ opacity: 1;
   border: 2px solid #d7dcde;
 }
 
-.appointment-item textarea,
+.appointment-item textarea:focus,
 .appointment-item input[type="text"]:focus {
-  color: #000000;
-
+  color: #444444;
+  opacity: 1;
   border-color: #000000;
 }
 
-.appointment-item textarea,
+.appointment-item textarea:hover,
 .appointment-item input[type="text"]:hover {
-  color: #b4b9bb;
+  color: #444444;
+  opacity: 0.5;
   border-color: #b4b9bb;
   }
 
+.appointment-item textarea:invalid,
+  .appointment-item input[type="text"]:invalid {
+    color: #e74246;
+    border-color: #e74246;
+  }
 
 
   /* ----- Сеточные стили ----- */
@@ -1270,7 +1305,7 @@ background-color: #eeeeee;
 
 .footer-social {
   display: flex;
-  margin-top: 69px;
+  padding-top: 9px;
 }
 
 .footer-social-left {
@@ -1425,26 +1460,168 @@ background-color: #ffffff;
 }
 
 .contacts {
-  margin: 0;
-  width: 320px;
   position: absolute;
-  top: 54px;
-  left: 20px;
+  width: 320px;
+  top: 55px;
 }
 
 .marker {
+  position: absolute;
   width: 231px;
   height: 190px;
-  position: absolute;
   top: 90px;
   left: 700px;
 }
 
+
 .address-map {
+  background-color: #ffffff;
   background-image: url("img/2.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
-  background-size: 1200px auto;
+ background-position: top center;
+ background-repeat: no-repeat;
+
   position: relative;
-  margin-bottom: 60px;
+
   }
+
+  /* Всплывающая форма */
+  @keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+   .modal {
+     position: fixed;
+     color: #000000;
+
+     background-color: #ffffff;
+     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+   }
+
+   .modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+   .modal-connection {
+     top: 10px;
+     left: 50%;
+
+     width: 960px;
+     margin-left: -450px;
+   }
+
+   .modal-close {
+   position: absolute;
+   top: 80px;
+   right: 90px;
+
+   width: 21px;
+   height: 21px;
+
+   font-size: 0;
+   opacity: 0.3;
+
+   background-image: url("img/close-cross.svg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   border: none;
+   cursor: pointer;
+ }
+
+.modal-close:focus,
+.modal-close:hover{
+  opacity: 1;
+}
+
+.modal-close:active{
+  opacity: 0.1;
+}
+ .modal-connection h2 {
+   margin-left: 98px;
+   margin-top: 68px;
+
+   font-size: 45px;
+   line-height: 45px;
+ }
+
+.connection-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+  margin-left: 100px;
+  justify-content: space-between;
+}
+
+ .appointment-item{
+   margin: 0;
+   margin-bottom: 32px;
+ }
+
+.appointment-item label{
+  display: block;
+  margin-bottom: 7px;
+}
+
+  .appointment-item input {
+  box-sizing: border-box;
+  width: 360px;
+  padding-top: 13px;
+  padding-left: 13px;
+  padding-bottom: 13px;
+  }
+
+.appointment-item textarea {
+  display: block;
+  width: 740px;
+  padding-top: 10px;
+  padding-left: 14px;
+  padding-bottom: 87px;
+}
+  .modal-connection .button {
+    display: block;
+    width: 100%;
+    margin-top: 14px;
+    margin-right: 500px;
+    margin-bottom: 84px;
+  }
+*/

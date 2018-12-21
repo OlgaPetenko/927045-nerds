@@ -1602,4 +1602,5 @@ height: 416px;
 
   .address-map iframe {
     border: none;
+    width: 100%;
   }

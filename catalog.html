@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body class="inner-page">
@@ -109,11 +109,11 @@
               <li class="sort-name"><a href="name.html">по названию</a></li>
             </ul>
             <ul class="up-down">
-              <li class="sort-down"><a class="down" href="down.html"><span class="visually-hidden">по убыванию</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+              <li class="sort-down"><a class="down" href="#"><span class="visually-hidden">по убыванию</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"></path></svg>
               </a></li>
-              <li class="sort-up"><a class="up" href="up.html"><span class="visually-hidden">по возрастанию</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+              <li class="sort-up"><a class="up" href="#"><span class="visually-hidden">по возрастанию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"></path></svg>
               </a></li>
             </ul>
           </section>
@@ -122,14 +122,16 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <article class="catalog-item-block">
-                  <a href="catalog-item.html">
-                    <img src="img/img-sedona-jpg.png" width="360" height="576" alt="сайт Sedona">
+                  <a class="catalog-block" href="catalog-item.html">
+                    <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="сайт Sedona">
                   </a>
                   <div class="browser">
                     <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                   </div>
                   <div class="hover-info">
+                    <a href="sedona.html">
                     <h2 class="name-product">Sedona</h2>
+                    </a>
                     <p class="info-product"> Информационный сайт для туристов</p>
                     <button class="price-product" type="button">
                       9900 руб.
@@ -140,13 +142,15 @@
               <li class="catalog-item">
                 <article class="catalog-item-block">
                   <a href="catalog-item.html">
-                    <img src="img/img-pink-jpg.png" width="360" height="576" alt="сайт Pink">
+                    <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="сайт Pink">
                   </a>
                   <div class="browser">
                     <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                   </div>
                   <div class="hover-info">
+                    <a href="pinkapp.html">
                     <h2 class="name-product">Pink App</h2>
+                  </a>
                     <p class="info-product"> Продуктовый лендинг приложения для iOS и Android </p>
                     <button class="price-product" type="button">
                       9900 руб.
@@ -157,13 +161,15 @@
               <li class="catalog-item">
                 <article class="catalog-item-block">
                   <a href="catalog-item.html">
-                    <img src="img/img-barbershop-jpg.png" width="360" height="576" alt="сайт Barbershop Borodinski">
+                    <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="сайт Barbershop Borodinski">
                   </a>
                   <div class="browser">
                     <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                   </div>
                   <div class="hover-info">
+                    <a href="barbershop.html">
                     <h2 class="name-product">Barbershop</h2>
+                  </a>
                     <p class="info-product"> Сайт салона красоты. Для мужчин, да. </p>
                     <button class="price-product" type="button">9900 руб.</button>
                   </div>
@@ -172,13 +178,15 @@
               <li class="catalog-item">
                 <article class="catalog-item-block">
                   <a href="catalog-item.html">
-                    <img src="img/img-mishka-jpg.png" width="360" height="576" alt="сайт Mishka">
+                    <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="сайт Mishka">
                   </a>
                   <div class="browser">
                     <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                   </div>
                   <div class="hover-info">
+                    <a href="mishka.html">
                     <h2 class="name-product">Mishka</h2>
+                  </a>
                     <p class="info-product"> Интернет-магазин вязаных игрушек </p>
                     <button class="price-product" type="button">9900 руб.</button>
                   </div>
@@ -187,13 +195,15 @@
               <li class="catalog-item">
                 <article class="catalog-item-block">
                   <a href="catalog-item.html">
-                    <img src="img/img-aplus-jpg.png" width="360" height="576" alt="сайт A plus">
+                    <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="сайт A plus">
                   </a>
                   <div class="browser">
                     <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                   </div>
                   <div class="hover-info">
+                    <a href="aplus.html">
                     <h2 class="name-product">A plus</h2>
+                  </a>
                     <p class="info-product"> Лендинг курсов повышения квалификации </p>
                     <button class="price-product" type="button">9900 руб.</button>
                   </div>
@@ -202,13 +212,15 @@
               <li class="catalog-item">
                 <article class="catalog-item-block">
                   <a href="catalog-item.html">
-                    <img src="img/img-kvast-jpg.png" width="360" height="576" alt="сайт кваст">
+                    <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="сайт кваст">
                   </a>
                   <div class="browser">
                     <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
                   </div>
                   <div class="hover-info">
+                      <a href="kvast.html">
                     <h2 class="name-product">Кваст</h2>
+                  </a>
                     <p class="info-product"> Промо-сайт производителя крафтового кваса </p>
                     <button class="price-product" type="button">9900 руб.</button>
                   </div>
@@ -216,7 +228,7 @@
               </li>
             </ul>
             <ul class="pagination-list">
-              <li class="pagination-item pagination-item-current"><a>1</a></li>
+              <li class="pagination-item-current pagination-item"><a>1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item next"><a href="#">Следующая</a></li>
@@ -292,6 +304,6 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-  <script src="modal.js"></script>
+  <script src="js/modal.min.js"></script>
 </body>
 </html>

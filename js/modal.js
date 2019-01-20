@@ -23,7 +23,8 @@ link.addEventListener("click", function (evt) {
   if (storage) {
     login.value = storage;
     email.focus();
-  } else {
+  }
+  else {
     login.focus();
   }
 });
@@ -40,10 +41,11 @@ form.addEventListener("submit", function (evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-  } else {
+  }
+  else {
     if (isStorageSupport) {
       localStorage.setItem("login", login.value);
-      }
+    }
   }
 });
 
